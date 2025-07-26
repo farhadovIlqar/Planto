@@ -1,0 +1,269 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    color: #FFFF;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding:18px;
+}
+
+/*Header Elements*/
+
+#header{
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.name{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    gap: 10px;
+    a{
+        color: #FFFF;
+        text-decoration: none;
+    }
+    opacity: 75%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    gap:70px;
+    opacity: 75%;
+}
+
+.menu ul>li:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-side{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap:30px;
+    opacity: 75%;
+}
+
+.menu-button{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+.menu-side picture img:nth-child(1){
+    width: 34px;
+    height: 34px;
+}
+
+.menu-closing{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:5px;
+}
+
+#line1{
+    width: 30px;
+    height: 3px;
+    background-color: #FFFF;
+    border-radius:4px;
+}
+
+#line2{
+    width: 20px;
+    height: 3px;
+    background-color: #FFFF;
+    border-radius:4px;
+}
+
+/*Hover effects for header elemnts*/
+
+.menu-button img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-closing:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor:pointer;
+}
+
+/*Upper main configuration*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.upper-main{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.left-upper-main{
+    display: flex;
+    flex-direction: column;
+    gap: 350px;
+}
+
+.context{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.context-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.context-button2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.context-info h1{
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 118px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    opacity: 75%;
+}
+
+.context-info p{
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    opacity: 75%;
+}
+
+.context-buttons span{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 75%;
+    border: 2px solid #FFFF;
+    border-radius: 12px;
+    padding: 15px 45px;
+}
+
+.context-button2 p{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 75%;
+}
+
+.context-buttons span:hover{
+    transform:scale(1.05);
+    background-color: #FFFF;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.customer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(1px);
+    border-radius: 45px;
+    padding: 40px;
+}
+
+.customer-name-point h4{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.customer-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.customer-review{
+    opacity: 75%;
+}
+
+.customer-name-point h4{
+    opacity: 75%;
+}
+
+.customer-point{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
