@@ -6,32 +6,36 @@
     padding: 0;
 }
 
+:root{
+    --plant: black;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f4f4f4;
+    background-color: hsl(117, 91%, 5%);
     color: #FFFF;
     background-image: url(images/background.png);
-    background-size: cover;
+    background-size: center;
     background-repeat: no-repeat;
 }
 
 .container {
     max-width: 100vw;
     margin: 0 auto;
-    padding:18px;
+    padding: 18px;
 }
 
 /*Header Elements*/
 
-#header{
+#header {
     max-height: 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.name{
-    display:flex;
+.name {
+    display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: 900;
@@ -39,10 +43,12 @@ body {
     line-height: 100%;
     letter-spacing: 0%;
     gap: 10px;
-    a{
+
+    a {
         color: #FFFF;
         text-decoration: none;
     }
+
     opacity: 75%;
 }
 
@@ -52,7 +58,7 @@ body {
     justify-content: center;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -62,7 +68,7 @@ body {
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 0%;
-    gap:70px;
+    gap: 70px;
     opacity: 75%;
 }
 
@@ -72,55 +78,55 @@ body {
     align-items: center;
 }
 
-.menu-side{
+.menu-side {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
-    gap:30px;
+    gap: 30px;
     opacity: 75%;
 }
 
-.menu-button{
+.menu-button {
     display: flex;
     align-items: center;
-    gap:30px;
+    gap: 30px;
 }
 
-.menu-side picture img:nth-child(1){
+.menu-side picture img:nth-child(1) {
     width: 34px;
     height: 34px;
 }
 
-.menu-closing{
-    display:flex;
+.menu-closing {
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap:5px;
+    gap: 5px;
 }
 
-#line1{
+#line1 {
     width: 30px;
     height: 3px;
     background-color: #FFFF;
-    border-radius:4px;
+    border-radius: 4px;
 }
 
-#line2{
+#line2 {
     width: 20px;
     height: 3px;
     background-color: #FFFF;
-    border-radius:4px;
+    border-radius: 4px;
 }
 
 /*Hover effects for header elemnts*/
 
-.menu-button img:hover{
+.menu-button img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
-.menu-closing:hover{
+.menu-closing:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -129,52 +135,52 @@ body {
 .menu li:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /*Upper main configuration*/
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 100px;
 }
 
-.upper-main{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
+.upper-main {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-between;
 }
 
-.left-upper-main{
+.left-upper-main {
     display: flex;
     flex-direction: column;
-    gap: 350px;
+    gap: 300px;
 }
 
-.context{
-    display:flex;
-    flex-direction:column;
-    gap:30px;
+.context {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.context-buttons{
+.context-buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
 }
 
-.context-button2{
+.context-button2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
 }
 
-.context-info h1{
+.context-info h1 {
     font-weight: 600;
     font-style: Semi Bold;
     font-size: 118px;
@@ -184,7 +190,7 @@ main{
     opacity: 75%;
 }
 
-.context-info p{
+.context-info p {
     font-weight: 500;
     font-style: Medium;
     font-size: 23px;
@@ -194,7 +200,7 @@ main{
     opacity: 75%;
 }
 
-.context-buttons span{
+.context-buttons span {
     font-family: Inter;
     font-weight: 400;
     font-style: Regular;
@@ -207,7 +213,7 @@ main{
     padding: 15px 45px;
 }
 
-.context-button2 p{
+.context-button2 p {
     font-weight: 400;
     font-style: Regular;
     font-size: 20px;
@@ -216,17 +222,18 @@ main{
     opacity: 75%;
 }
 
-.context-buttons span:hover{
-    transform:scale(1.05);
+.context-buttons span:hover {
+    transform: scale(1.05);
     background-color: #FFFF;
     color: #000;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 }
 
-.customer{
+.customer {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
     gap: 20px;
     border: 2px solid;
     background: rgba(255, 255, 255, 0.05);
@@ -236,7 +243,7 @@ main{
     padding: 40px;
 }
 
-.customer-name-point h4{
+.customer-name-point h4 {
     font-family: Inter;
     font-weight: 400;
     font-style: Regular;
@@ -246,24 +253,396 @@ main{
 
 }
 
-.customer-info{
+.customer-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
 }
 
-.customer-review{
+.customer-review {
     opacity: 75%;
 }
 
-.customer-name-point h4{
+.customer-name-point h4 {
     opacity: 75%;
 }
 
-.customer-point{
+.customer-point {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+
+.right-upper-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 525px;
+    height: 530px;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 9px 18.4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 77px;
+}
+
+.right-upper-main picture img {
+    margin-top: -120px;
+    transform: scale(0.9);
+}
+
+#text {
+    width: 413.2px;
+    height: 200px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#text>p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 75%;
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+#text>section>p {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.75);
+    opacity: 75%;
+}
+
+#text>section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#text>section>section.buynow {
+    width: 200px;
+    height: 60px;
+    padding: 15px 4px 15px 4px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+#text>section>section.buynow:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    transform: scale(1.05);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+}
+
+#line {
+    width: 12px;
+    height: 4px;
+    background: white;
+    border-radius: 4px;
+}
+
+#dot1 {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+#dot2 {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.our-plants {
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 75%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.vector-left {
+    position: relative;
+    left: 50px;
+}
+
+.vector-right {
+    position: relative;
+    bottom: 3px;
+    right: 50px;
+}
+
+.middle-main {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    max-width: 100vw;
+}
+
+#first-card,
+#second-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 90vw;
+    height: max-content;
+    background: #FFFFFF0D;
+    border-radius: 151px;
+    border: 2px solid linear-gradient(135.72deg, rgba(255, 255, 255, 0.27) 8.53%, rgba(255, 255, 255, 0) 60.59%, rgba(255, 255, 255, 0.33) 93.17%);
+    backdrop-filter: blur(40px);
+
+}
+
+#second-card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    width: 90vw;
+    height: max-content;
+    background: #FFFFFF0D;
+    border-radius: 151px;
+    border: 2px solid linear-gradient(135.72deg, rgba(255, 255, 255, 0.27) 8.53%, rgba(255, 255, 255, 0) 60.59%, rgba(255, 255, 255, 0.33) 93.17%);
+    backdrop-filter: blur(40px);
+}
+
+.card-info-buy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;
+}
+
+.card-buy {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-info-buy h3 {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.card-info-buy:nth-child(2) {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.card-info-buy p:nth-child(3) {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.explore {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: 2px solid #FFFF;
+    border-radius: 12px;
+    padding: 15px 35px;
+}
+
+.explore:hover {
+    transform: scale(1.05);
+    background-color: #FFFF;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.card-buy picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    padding: 8px 16px 8px 16px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.card-buy picture img {
+    width: 34px;
+    height: 34px;
+}
+
+.card-buy picture:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#plant1 img {
+    margin-top: -100px;
+    width: 500px;
+    height: 500px;
+}
+
+#plant2 img {
+    margin-top: -150px;
+    width: 500px;
+    height: 500px;
+}
+
+.selling {
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 75%;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.selling-plants-top,
+.selling-plants-bottom {
+    display: flex;
+    max-width: 100vw;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.selling-plants-top {
+    margin-top: 250px;
+}
+
+.selling-plant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    background: #FFFFFF0D;
+    border: 2px solid linear-gradient(147.93deg, rgba(255, 255, 255, 0.2) 6.68%, rgba(0, 0, 0, 0) 51.71%, rgba(255, 255, 255, 0.2) 93.27%);
+    ;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 9px 18.4px 0px hsla(0, 0%, 0%, 0.25);
+    border-radius: 77px;
+}
+
+.selling-card-buy {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+}
+
+.selling-card-info-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 16px 16px 16px 25px;
+}
+
+.selling-card-info-buy h3 {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    opacity: 75%;
+}
+
+.selling-card-info-buy p:nth-child(2) {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    opacity: 75%;
+}
+
+.selling-card-info-buy p:nth-child(1) {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    opacity: 75%;
+}
+
+.selling-card-buy picture {
+    border: 2px solid;
+    padding: 8px 16px 8px 16px;
+    border-radius: 10px;
+}
+
+.selling-plant-card>picture>img  {
+    width: 250px;
+    height: 250px;
 }
